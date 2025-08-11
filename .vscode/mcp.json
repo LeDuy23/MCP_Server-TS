@@ -2,10 +2,10 @@
   "servers": {
     "test-mcp-video-server": {
       "type": "stdio",
-      "command": "npm",
-      "args": ["run" , "server:dev"],
+      "command": "node",
+      "args": ["build/server.js"],
       "cwd": "${workspaceFolder}",
-      "dev": { 
+      "dev": {
         "watch": "build/**/*.js",
         "debug": {
           "type": "node"
